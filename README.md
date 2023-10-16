@@ -26,6 +26,6 @@ After that the winner is revealed and the score updates.
 
 Before the game ends you will be asked if you want to continue playing or stop.
 
-[Source Code](rock_paper_scissors.py)
+[Source Code](Practical_Project_Rock–Paper–Scissors.py)
 
 ![image](https://github.com/LDeathN/RockPaperScissorsByLDeathN/assets/140381179/49e0a35e-b0e7-4e20-945e-14f9a1c4a875)
