@@ -1,3 +1,4 @@
+from colorama import Fore, Back
 import random
 rock = "Rock"
 paper = "Paper"
@@ -22,25 +23,25 @@ while True:
         computer_move = paper
     elif computer_move == 3:
         computer_move = scissors
-    print(f"The computer chose {computer_move}.")
+    print(Fore.GREEN + f"The computer chose {computer_move}.")
     if (player_move == rock and computer_move == scissors) or \
             (player_move == paper and computer_move == rock) or \
             (player_move == scissors and computer_move == paper):
-        print("You win!")
+        print(Fore.BLUE + "You win!")
         player_count += 1
     elif (computer_move == rock and player_move == scissors) or \
             (computer_move == paper and player_move == rock) or \
             (computer_move == scissors and player_move == paper):
-        print("You lose!")
+        print(Fore.RED + "You lose!")
         computer_count += 1
     else:
-        print("Draw!")
-    print(f"Current score is player: {player_count}, computer: {computer_count}")
+        print(Fore.YELLOW + "Draw!")
+    print(Fore.RESET + f"Current score is player: {player_count}, computer: {computer_count}")
     decision = input("Type [y] to Play Again or [n] to quit: ")
     if decision == "y":
         continue
     elif decision == "n":
-        print("Thank you for playing!")
+        print(Back.WHITE + Fore.BLACK + "Thank you for playing!")
         break
 print(f"Final score is player: {player_count}, computer: {computer_count}")
 
